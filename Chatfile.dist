@@ -18,6 +18,7 @@ require 'robut-eightball'
 # wren plugins
 require_relative 'plugins/robut_pub.rb'
 require_relative 'plugins/robut_fortune.rb'
+require_relative 'plugins/robut_screen.rb'
 
 Robut::Plugin::Weather.default_location = ""
 Robut::Plugin::Weather.api_key = ""
@@ -37,6 +38,7 @@ Robut::Plugin.plugins = [
     Robut::Plugin::RockPaperScissors,
     Robut::Plugin::EightBall,
     Robut::Plugin::Pub,
+    Robut::Plugin::Screen,
     Robut::Plugin::Fortune
 ]
 
